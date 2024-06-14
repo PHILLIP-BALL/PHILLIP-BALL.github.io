@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>General Template</title>
+<style>
+    body
+    {
+        background-color:black;
+    }
+    h1
+    {
+        color:white;
+        font-size:160px;
+    }
+    .image
+    {
+        width:300px;
+        display:inline-block;
+    }
+    h2
+    {
+        color:white;
+        font-size: 80px;
+    }
+    p
+    {
+        color:white;
+        font-size:40px;
+    }
+    label
+    {
+        color:white;
+        font-size:50px;
+    }
+    input
+    {
+        font-size:50px;
+    }
+    button
+    {
+        font-size: 30px;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+    <h1 id="header">UNIVERSITY OF STONE</h1>
+    <img class="image" src="https://github.com/BCNNofficial/BCNNofficial.github.io/blob/main/buy-the-book-or-die.png?raw=true">
+	<img class="image" src="https://github.com/BCNNofficial/BCNNofficial.github.io/blob/main/buy-the-book-or-die.png?raw=true">
+	<img class="image" src="https://github.com/BCNNofficial/BCNNofficial.github.io/blob/main/buy-the-book-or-die.png?raw=true">
+	<img class="image" src="https://github.com/BCNNofficial/BCNNofficial.github.io/blob/main/buy-the-book-or-die.png?raw=true">
+	<img class="image" src="https://github.com/BCNNofficial/BCNNofficial.github.io/blob/main/buy-the-book-or-die.png?raw=true">
+	<img class="image" src="https://github.com/BCNNofficial/BCNNofficial.github.io/blob/main/buy-the-book-or-die.png?raw=true">
+	<img class="image" src="https://github.com/BCNNofficial/BCNNofficial.github.io/blob/main/buy-the-book-or-die.png?raw=true">
+	<h2>THE GREATEST BOOK EVER</h2>
+    <p>DO NOT BE AFRAID  TO BUY THE GREATEST BOOK EVER</p>
+    <P>YOU <STRONG>WILL</STRONG> REGRET IT IF YOU DON'T BUY THE BOOK</P>
+    <div class="enter"><label for="NAME">NAME:</label><input type="text" id="NAME" name="NAME" placeholder="YOU"></div><br>
+    <div class="enter"><label for="CREDITCARD">CREDIT CARD:</label><input type="text" id="CREDITCARD" name="CREDITCARD" placeholder="3333 3333 3333 3333"></div><br>
+    <div class="enter"><label for="EXPIRATIONDATE">EXPIRATION DATE:</label><input type="text" id="EXPIRATIONDATE" name="EXPIRATIONDATE" placeholder="99/99"></div><br>
+    <div class="enter"><label for="THREENUMBERSONTHEBACK">THE THREE NUMBERS ON THE BACK:</label><input type="text" id="THREENUMBERSONTHEBACK" name="THREENUMBERSONTHEBACK" placeholder="999"></div><br>
+    <button type="button">BUY THE BOOK</button>
+    <script>
+        var repeater;
+
+        function toWhite()
+        {
+            var myHeader = document.getElementById("header");
+            myHeader.style.color = 'white';
+            repeater = setTimeout(toRed, 1000);
+        }
+        function toRed()
+        {
+            var myHeader = document.getElementById("header")
+            myHeader.style.color = 'red';
+            repeater = setTimeout(toBlue, 1000);
+        }
+        function toBlue()
+        {
+            var myHeader = document.getElementById("header")
+            myHeader.style.color = 'blue';
+            repeater = setTimeout(toGreen, 1000);
+        }
+        function toGreen()
+        {
+            var myHeader = document.getElementById("header")
+            myHeader.style.color = 'green';
+            repeater = setTimeout(toOrange, 1000);
+        }
+        function toOrange()
+        {
+            var myHeader = document.getElementById("header")
+            myHeader.style.color = 'orange';
+            repeater = setTimeout(toPink, 1000);
+        }
+        function toPink()
+        {
+            var myHeader = document.getElementById("header")
+            myHeader.style.color = 'pink';
+            repeater = setTimeout(toWhite, 1000);
+        }
+
+        toWhite();
+	</script>
+</body>
+</html>
